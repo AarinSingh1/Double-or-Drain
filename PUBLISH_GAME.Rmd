@@ -1,0 +1,52 @@
+---
+title: "Double or Drain"
+output: html_document
+date: "2025-12-31"
+---
+
+```{r setup, include=FALSE}
+# This document is for PUBLISHING ONLY.
+# Interactive code (readline) must NOT execute during knitting.
+library(tidyverse)
+```
+## What is Double or Drain?
+
+Double or Drain is a probability-based console game about risk and decision-making.
+
+You start with $1. Each round you choose one of three actions:
+
+D — attempt to double your money with probability p
+
+B — bank your current balance and end the game
+
+E — toggle a hint that estimates whether continuing is sensible
+
+If a double attempt fails, your balance becomes $0 and the game ends immediately.
+
+## How to play the game
+
+This webpage does not run the game.
+
+The game is interactive and must be played in the R console.
+
+To play locally, run the following commands in R:
+
+
+
+
+```{r, eval=FALSE}
+
+source("game.R")
+play_game(p = 0.6, target = 16)
+```
+
+## About the hint
+
+The hint does not maximize expected value.
+
+Instead, it estimates the probability of reaching a chosen target before busting.
+This corresponds to a median-style decision rule, not EV maximization.
+
+This illustrates an important concept in probability:
+
+Maximizing expected value can recommend extreme risk-taking, while optimizing for typical outcomes produces a natural stopping rule.
