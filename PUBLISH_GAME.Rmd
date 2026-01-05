@@ -50,3 +50,11 @@ This corresponds to a median-style decision rule, not EV maximization.
 This illustrates an important concept in probability:
 
 Maximizing expected value can recommend extreme risk-taking, while optimizing for typical outcomes produces a natural stopping rule.
+
+## Get the code
+
+The source code for this project is available on GitHub:
+
+**Repository:**  
+https://github.com/AarinSingh1/Double-or-Drain
+
